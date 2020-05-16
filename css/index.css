@@ -1,0 +1,92 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 4%;
+}
+
+.flex-container-item-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.flex-container-item-2 > div {
+  background-color: rgb(153, 153, 153);
+  border: 2px black solid;
+  color: black;
+  font-weight: bold;
+  width: 30%;
+}
+
+.flex-container-item-2 > div > p {
+  margin: 0px;
+  clear: both;
+  padding: 2%;
+}
+
+.chicken {
+  background-color: rgb(213, 152, 152);
+  border-left: 2px black solid;
+  border-bottom: 2px black solid;
+  float: right;
+  padding: 2%;
+  width: 30%;
+  text-align: center;
+  font-size: 22px;
+}
+
+.beef {
+  background-color: rgb(193, 69, 67);
+  border-left: 2px black solid;
+  border-bottom: 2px black solid;
+  float: right;
+  padding: 2%;
+  width: 30%;
+  text-align: center;
+  font-size: 22px;
+  color: white
+}
+
+.sushi {
+  background-color: rgb(229, 209, 152);
+  border-left: 2px black solid;
+  border-bottom: 2px black solid;
+  float: right;
+  padding: 2%;
+  width: 30%;
+  text-align: center;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .flex-container-item-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex-container-item-2 > div {
+    width: 45%;
+    margin: 2%;
+  }
+
+  .box-style-sushi {
+    flex-grow: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .flex-container-item-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-container-item-2 > div {
+    width: 95%;
+    margin: 3%;
+  }
+}
